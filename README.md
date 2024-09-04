@@ -5,7 +5,7 @@
 
 ### tasks: 
 - B01-RAC(complete in backend, frontend incomplete)
-- B03-RAC(slightly complete in backend, left to implement server side validation, slight frontend work complete)
+- B03-RAC(fully complete but unstyled)
 
 basic express app is in app.js
 routes are in a seperate file along with the (passwordless)db schemas/models
@@ -14,7 +14,7 @@ i use pnpm instead of npm(used to run my life on mobile data) but i think npm sh
 #### hello yall!
 im uday. ive started out with gamedev initially but ive done a fair bit of web dev back during the pandemic era. ive lost a little(lot) of touch but so far ive worked with
 - express
-- svelte
+- svelte(i havent used it in the proj because its a constantly evolving framework and i need to essentially relearn it since i used it at like 0.x version)
 - (we all make bad choices) some angular
 ---------------------------------------------
 
