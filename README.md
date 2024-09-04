@@ -16,6 +16,8 @@ im uday. ive started out with gamedev initially but ive done a fair bit of web d
 - express
 - svelte
 - (we all make bad choices) some angular
+---------------------------------------------
+
 as of non web dev stuff, ive found rust cool and tried building some stuff in it. i also tried a bit of interpreter design from crafting interpreters but havent finished it yet
 
 anyways id love to get back to web dev. and i do love watching anime too
