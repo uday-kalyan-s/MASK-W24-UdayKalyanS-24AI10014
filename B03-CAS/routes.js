@@ -2,11 +2,14 @@ import { Router } from "express";
 import { sessionModel, userModel } from "./db.js";
 import { compare, hash } from "bcrypt";
 
-
 const router = Router()
 
 router.post('/register', (req ,res) => {
     const data = req.body;
+    if(!(data.username && data.password && data.password.length >= 8)) {
+        res.status(401).send("password not meeting min conditions")
+        return;
+    }
     hash(data.password, 0, (err, hashed_psswd) => {
         if(err) {
             throw err
@@ -19,8 +22,12 @@ router.post('/register', (req ,res) => {
     })
 })
 
-router.post('/login', (req, res) => {
+router.post('/login',(req, res) => {
     const data = req.body;
+    if(!(data.username && data.password && data.password.length >= 8)) {
+        res.status(401).send("error")
+        return;
+    }
 
     userModel.findOne({username: data.username})
     .then(record => {
