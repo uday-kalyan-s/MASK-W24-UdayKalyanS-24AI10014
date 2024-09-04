@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+}
+
+main {
+    color: #45B8E8;
+    background-color: #262525;
+}
+
+nav {
+    background-color: #D61F35;
+    margin: 0px;
+}
+
+.navbutton {
+    padding: 10px;
+    background-color: #D61F35;
+    border: 0px;
+    font-size: large;
+}
+
+.navbutton:hover {
+    background-color: #9c1424;
+}
+
+.form_cat {
+    padding: 10px;
+}
+
+.text_inp {
+    font-size: larger;
+}
+
+label {
+    display: inline-block;
+    font-size: 40px;
+    width: max-content;
+}
+
+.radio_func {
+    padding: 10px;
+    background-color: #45B8E8;
+    box-shadow: 1px 1px 3px blue;
+    border-radius: 10%;
+    border: 0px;
+    font-size: x-large;
+}
+
+#animes_list {
+    display: inline-block;
+}
+
+.radio_func:disabled {
+    background-color: #25A8D8;
+    box-shadow: 0px;
+}
+
+.radio_class {
+    padding: 0%;
+}
+
+.card {
+    background-color: #565555;
+    align-items: center;
+    width: 200px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.card_title {
+    font-size: 20px;
+    margin: 10px;
+}
+
+image {
+    width: max-content;
+}
+
+.subtext {
+    color: #3289ad;
+}
