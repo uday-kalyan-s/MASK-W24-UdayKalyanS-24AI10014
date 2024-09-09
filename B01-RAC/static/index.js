@@ -60,12 +60,28 @@ window.onload = (event) => {
     form.onsubmit = async function(event) {
         event.preventDefault()
         console.log("hello");
-        let res = await fetch("/anime_api", {
+        fetch("/anime_api", {
             method: "post",
             body: JSON.stringify(Object.fromEntries(new FormData(form))),
             headers: {
                 "Content-Type": "application/json"
             }
         })
+        .then(async (res) => {
+            let anime = await res.json();
+            const base_tag = document.getElementById("animes_list")
+            let htmlc = `
+            <a href="/anime/${anime._id}">
+                <div class="card">
+                    <image src="${anime.image_url}" alt="anime poster">
+                    <div class="card_title">${anime.name}</div>
+                    <div class="subtext">${anime.status[0]}, ${anime.type[0]}</div>
+                    <div class="subtext">${anime.release_year}</div>
+                </div>
+            </a>
+            `
+            base_tag.innerHTML += htmlc
+        })
+        .catch((err) => console.log(err))
     }
 }

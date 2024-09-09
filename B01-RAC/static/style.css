@@ -65,6 +65,7 @@ label {
     width: 200px;
     display: inline-block;
     padding: 10px;
+    margin: 10px;
 }
 
 .card_title {
@@ -72,8 +73,8 @@ label {
     margin: 10px;
 }
 
-image {
-    width: max-content;
+img {
+    width: 200px;
 }
 
 .subtext {
