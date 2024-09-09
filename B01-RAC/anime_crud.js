@@ -31,7 +31,6 @@ function download(url, anime_id, next, err)
 router.post('/', (req, res) => {
     const anime = new AnimeModel(req.body)
     download(req.body.image_url, anime.id, () => {
-        anime.image_url = `/public/anime_images/${anime.id}.jpg`
         anime.save()
             .then(() => res.redirect('/'))
             .catch(() => res.status(500).send("bad request"))

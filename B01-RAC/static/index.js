@@ -60,7 +60,7 @@ window.onload = (event) => {
     form.onsubmit = async function(event) {
         event.preventDefault()
         console.log("hello");
-        let res = await fetch("/anime", {
+        let res = await fetch("/anime_api", {
             method: "post",
             body: JSON.stringify(Object.fromEntries(new FormData(form))),
             headers: {
